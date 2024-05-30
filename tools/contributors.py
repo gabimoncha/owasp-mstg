@@ -1,10 +1,9 @@
-import json
-import requests
+from security import safe_requests
 
 url = 'https://api.github.com/repos/OWASP/owasp-mstg/stats/contributors'
 headers = {'Accept' : 'application/vnd.github.v3+json'}
 
-r = requests.get(url, headers=headers)
+r = safe_requests.get(url, headers=headers)
 
 data = r.json()
 

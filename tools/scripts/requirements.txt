@@ -2,3 +2,4 @@ lxml
 bs4
 openpyxl
 Pillow
+security==1.2.1
