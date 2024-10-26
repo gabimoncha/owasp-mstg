@@ -4,7 +4,7 @@ import requests
 url = 'https://api.github.com/repos/OWASP/owasp-mstg/stats/contributors'
 headers = {'Accept' : 'application/vnd.github.v3+json'}
 
-r = requests.get(url, headers=headers)
+r = requests.get(url, headers=headers, timeout=60)
 
 data = r.json()
 
